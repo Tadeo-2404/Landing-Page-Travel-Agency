@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(90deg, rgba(60, 62, 63, 0.5) 0%, rgba(48, 90, 90, 0.5) 100%), url(/img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(179, 3, 3);
+}
+.logo-nav img {
+   height: 100px;
+   width: 500px;
+}
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    column-gap: 20px;
+}
+.nav-container a {
+    color: white;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 5px;
+}
+.nav-container a:hover {
+    color: gold;
+}
+
+
+/*Header Intro*/
+.header-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-intro h1 {
+    color: white;
+    margin-top: 200px;
+    font-size: 90px;
+}
+.header-text {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+/*PROMOS*/
+.promos-container {
+    width: 100%;
+    padding: 15px;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    background-image: url(/img/bgPromos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    grid-area: 
+    "p1 p2 p3"
+    "p4 p5 p6";
+    grid-template-areas:
+      "imagen1 imagen2 imagen3"
+      "imagen4 imagen5 imagen6"
+      ;
+}
+.p1 {
+    grid-area: imagen1;
+}
+.p2 {
+    grid-area: imagen2;
+}
+.p3 {
+    grid-area: imagen3;
+}
+.p4 {
+    grid-area: imagen4;
+}
+.p5 {
+    grid-area: imagen5;
+}
+.p6 {
+    grid-area: imagen6;
+}
+
+.promos img {
+    width: 200px;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.promos-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: gray;
+    text-align: center;
+    width: 400px;
+}
+.promos-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.promos-text p {
+    max-width: 100%;
+    max-height: 40px;
+}
+
+button {
+    border: none;
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    width: 150px;
+    background-color: rgb(179, 3, 3);
+}
+.header-button {
+    margin-bottom: 15px;
+}
+
+
+
+/*MODAL*/
+
+.form {
+    padding: 30px;
+    position: relative;
+    left: 700px;
+    width: 500px;
+    margin-bottom: 50px;
+    display: flex;
+    background-color: rgb(24, 103, 221);
+    flex-direction: column;
+    align-items: center;
+}
+.form-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    column-gap: 10px;
+}
+label {
+    font-size: 30px;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 10px;
+}
+input {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.btn {
+    background-color: rgb(179, 3, 3);
+   color: white;
+   border: none;
+   padding: 15px;
+   width: 100%;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    overflow: auto;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(29, 26, 26, 0.752);
+}
+#close {
+    color: white;
+    position: relative;
+    left: 250px;
+    top: -60px;
+}
+.title-container {
+    display: flex;
+    color: white;
+    flex-direction: row;
+    font-size: 40px;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+
+/*Footer*/
+.footer {
+    background-color: rgba(60, 62, 63, 0.5);
+    column-gap: 40px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    column-gap: 5px;
+}
+.social-container {
+    display: flex;
+    column-gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MQ*/
+/*SLIDER*/
+@media (max-width: 768px) {
+    .slider__body {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content 1fr;
+    }
+
+    .slider__img {
+    width: 210px;
+    height: 210px;
+    }
+}
+
