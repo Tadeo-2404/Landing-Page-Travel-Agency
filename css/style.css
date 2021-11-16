@@ -172,9 +172,8 @@
 .form {
     padding: 30px;
     position: relative;
-    left: 200px;
+    left: 400px;
     width: 500px;
-    max-height: 500px;
     margin-bottom: 50px;
     display: flex;
     background-color: rgb(24, 103, 221);
