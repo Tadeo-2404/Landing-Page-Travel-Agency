@@ -118,20 +118,98 @@
 }
 
 
+
+
+
+
 /*PROMOS*/
 .promos {
-    margin-top: 200px;
+    height: 100%;
+    margin-top: 100px;
     text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url(/img/bgPromos.jpg);
 }
 
-.promos-container {
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    column-gap: 40px;
+.promos-title {
+    background-color: black;
+    padding: 15px;
 }
+
+.promos-container {
+    height: 100%;
+    padding: 20px; 
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+    column-gap: 40px; 
+}
+.first-col {
+    margin: 20px;
+}
+
+.second-col {
+    margin: 20px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+}
+.promos-div-s1{
+    background-image: url(/img/promos1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+}
+.promos-div-s1:hover{
+    transform: translateY(10px);
+}
+
+.promos-div:nth-of-type(1) {
+    background-image: url(/img/pack5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.promos-div:nth-of-type(2) { /*Honk Kong*/
+    background-image: url(/img/promo3.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+}
+.promos-div:nth-of-type(3) { /*Paris*/
+    background-image: url(/img/promo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.promos-div:nth-of-type(4) { /*Cancun*/
+    background-image: url(/img/pack4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.promos-div:nth-of-type(1):hover {
+    transform: translateY(10px);
+}
+.promos-div:nth-of-type(2):hover {
+    transform: translateY(10px);
+}
+.promos-div:nth-of-type(3):hover {
+    transform: translateY(10px);
+}
+.promos-div:nth-of-type(4):hover {
+    transform: translateY(10px);
+}
+
+
 
 .promos h2 {
     margin-top: 20px;
@@ -146,8 +224,13 @@
     background-color: gainsboro;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
+    padding: 50px;
+    width: 100%;
+    height: 100%;
 }
+ 
 
 .promos-text {
     width: 80%;
@@ -160,25 +243,24 @@
     margin-bottom: 30px;
 }
 
-.promos-header-title {
-    font-size: 30px;
-    padding: 15px;
-    text-align: center;
-}
+
 
 
 /*MODAL*/
+.form-container {
+    display: flex;
+    justify-content: center;
+}
 
 .form {
     padding: 30px;
-    position: relative;
-    left: 400px;
     width: 500px;
     margin-bottom: 50px;
     display: flex;
-    background-color: rgb(24, 103, 221);
+    background-color: white;
     flex-direction: column;
     align-items: center;
+    border: solid 15px black;
 }
 
 .form-div {
@@ -186,18 +268,12 @@
     flex-direction: column;
     margin-bottom: 30px;
     column-gap: 10px;
-}
-
-label {
-    font-size: 30px;
-    font-weight: 600;
-    color: black;
-    margin-bottom: 10px;
-}
-
-input {
-    font-size: 20px;
     padding: 10px;
+    text-align: center;
+}
+.form-div h4 {
+    color: red;
+    
 }
 
 .btn {
@@ -221,15 +297,22 @@ input {
 }
 
 #close {
-    color: white;
     position: relative;
-    left: 250px;
-    top: -60px;
+    left: 20;
+    color: black;
+}
+.span-div {
+    top: 10px;
+    right: 0px;
+    left: 400px;
+    bottom: 0px;
+    position: absolute;
 }
 
 .title-container {
+    text-align: center;
     display: flex;
-    color: white;
+    color: Black;
     flex-direction: row;
     font-size: 40px;
     margin-bottom: 15px;
@@ -419,6 +502,10 @@ input {
         height: 80px;
         width: 350px;
     }
+    .span-div {
+        left: 250px;
+        right: 30px;
+    }
 
     /*SERVICES*/
     .services {
@@ -473,6 +560,13 @@ input {
     }
     .brands h2 {
         font-size: 40px;
+    }
+    .form {
+        width: 300px;
+        height: 700px;
+    }
+    .title-container {
+        display: flex;
     }
 
     /*Footer*/
