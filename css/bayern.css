@@ -146,17 +146,8 @@ button {
 
 
 /*MQ*/
-/*SLIDER*/
 @media (max-width: 768px) {
-    .slider__body {
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content 1fr;
-    }
-
-    .slider__img {
-    width: 210px;
-    height: 210px;
-    }
+   
     .header {
         display: flex;
         flex-direction: column;
@@ -198,17 +189,7 @@ button {
         width: 350px;
     }
 
-    .staff {
-        flex-direction: column;
-        width: 100%;
-    }
-    .staff-container {
-        width: 100%;
-    }
-    .staff-img img {
-        width: 300px;
-        height: 400px;
-    }
+  
      /*Footer*/
      footer {
         flex-direction: column;
@@ -221,7 +202,13 @@ button {
         margin-top: 15px;
         margin-bottom: 15px;
     }
+    .hotel-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hotel-div-body {
+        align-items: center;
+    }
 
 }
-
-
