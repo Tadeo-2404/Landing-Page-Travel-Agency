@@ -7,9 +7,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(90deg, rgba(60, 62, 63, 0.5) 0%, rgba(48, 90, 90, 0.5) 100%), url(/img/aboutbg.jpg);
+    background: linear-gradient(90deg, rgba(60, 62, 63, 0.5) 0%, rgba(48, 90, 90, 0.5) 100%), url(/img/HongKong/header.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     height: 600px;
 }
 .nav-bar {
@@ -18,7 +18,7 @@
     justify-content: space-around;
     width: 100%;
     padding: 10px;
-    background-color: rgb(179, 3, 3);
+    background-color: rgba(179, 3, 3);
 }
 .logo-nav img {
    height: 100px;
@@ -42,12 +42,6 @@
 }
 
 /*Header Intro*/
-.header-intro {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
 
 .header-intro h1 {
     color: white;
@@ -61,50 +55,57 @@
     color: white;
 }
 
-/*main*/
-.info {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    background-color: white;
-    padding: 20px;
-    text-align: center;
+/*HOTEL SECTION*/
+.hotel {
+    padding: 40px;
 }
-.info-main h3 {
-   margin-bottom: 10px;
-   text-align: center;
-   font-size: 40px;
-}
-.info-main p {
+
+.hotel-div {
+    display: grid;
+    background-color: rgb(228, 222, 222);
+    grid-template-columns: 40% 60%;
     margin-bottom: 30px;
-    width: 90%;
-    font-size: 30px;
 }
 
-/*STAFF*/
-.staff {
+.hotel-div img {
+    width: 100%;
+    height: 100%;
+}
+
+.hotel-div-body {
     display: flex;
-    column-gap: 45px;
-    justify-content: center;
-    margin-bottom: 30px;
-    background-color: white;
-}
-.staff-img img {
-    width: 200px;
-    height: 200px;
-}
-
-.staff-container {
+    flex-direction: column;
+    align-items: start;
     padding: 20px;
-    text-align: center;
-    background-color: rgba(255, 231, 14, 0.986);
+}
+.hotel-div-title {
+    font-size: 50px;
+    color: red;
+    margin-bottom: 15px;
 }
 
-.staff-container h4 {
-    font-size: 30px;
+.hotel-div-icons {
+    font-size: 50px;
+    margin-bottom: 15px;
 }
-.staff-container p {
+
+.hotel-div-text {
     font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.hotel-div-price {
+    margin-bottom: 15px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(179, 3, 3);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 100%;
 }
 
 /*Footer*/
@@ -222,4 +223,5 @@
     }
 
 }
+
 
