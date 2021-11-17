@@ -541,11 +541,19 @@
 
     /*PROMOS*/
     .promos-container {
-        padding: 20px;
+        height: 100%;
+        padding: 20px; 
+        color: white;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        column-gap: 40px;
+        justify-content: center;
+        column-gap: 40px; 
+    }
+    .second-col {
+        margin: 20px;
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
     }
     .promos-div {
         margin-top: 20px;
