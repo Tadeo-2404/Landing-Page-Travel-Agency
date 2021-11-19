@@ -1,19 +1,3 @@
-let modal = document.getElementById('modal');
-let abrir = document.getElementById('abrir');
-let cerrar = document.getElementById('close')
-let body = document.getElementById('flex');
-
-cerrar.addEventListener('click', function() {
-  modal.style.display = 'none';
-});
-
-modal.addEventListener('click', function() {
-  modal.style.display = 'none';
-});
-
-window.onload  = function() {
-  modal.style.display = 'block';
-};
 
 /* SLIDER */
 (function() {

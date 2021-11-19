@@ -151,7 +151,7 @@ button {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background: linear-gradient(90deg, rgba(60, 62, 63, 0.5) 0%, rgba(48, 90, 90, 0.5) 100%), url(/img/bgHeader.jpg);
+        background: linear-gradient(90deg, rgba(60, 62, 63, 0.5) 0%, rgba(48, 90, 90, 0.5) 100%), url(/img/SanFrancisco/header.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         height: initial;
@@ -208,6 +208,10 @@ button {
     }
     .hotel-div-body {
         align-items: center;
+    }
+    .hotel-div img {
+        width: 300px;
+        height: 300px;
     }
 
 }
